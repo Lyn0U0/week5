@@ -1,0 +1,463 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.content {
+  background-image: url(https://bit.ly/2P7GhNd);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.content img {
+  width: 189px;
+  height: 45px;
+  margin-bottom: 50px;
+}
+
+.line {
+  position: absolute;
+  top: 5px;
+  width: 180px;
+  border-top: solid #3F5D45 1px;
+  z-index: 2;
+}
+
+.check_circle {
+  position: relative;
+  margin-bottom: 32px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+.myicon-tick-checked {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #3F5D45;
+}
+
+.myicon-tick-checked:before, .myicon-tick-checked:after, .myicon-tick-uncheck:before, .myicon-tick-uncheck:after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  color: white;
+  border: 1px solid;
+  background-color: white;
+}
+
+.myicon-tick-checked:before, .myicon-tick-uncheck:before {
+  width: 1px;
+  height: 1px;
+  left: 25%;
+  top: 50%;
+  -webkit-transform: skew(0deg, 50deg);
+          transform: skew(0deg, 50deg);
+}
+
+.myicon-tick-checked:after, .myicon-tick-uncheck:after {
+  width: 3px;
+  height: 1px;
+  left: 45%;
+  top: 42%;
+  -webkit-transform: skew(0deg, -50deg);
+          transform: skew(0deg, -50deg);
+}
+
+.back {
+  width: 300px;
+  height: 65px;
+  background-color: #FFE180;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.back h2 {
+  color: #3F5D45;
+  font-size: 24px;
+}
+
+.backmob {
+  display: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px 30px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header ul {
+  width: 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 79px;
+}
+
+.header ul :hover {
+  color: #EAF0ED;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3F5D45;
+  font-weight: bold;
+}
+
+.nar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hum {
+  display: none;
+}
+
+.subscribe {
+  background: #3F5D45;
+}
+
+.Info {
+  width: 780px;
+}
+
+.subscribeInfo {
+  height: 116px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscribe-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe-header img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.subscribe-title {
+  font-size: 24px;
+  line-height: 33px;
+  color: #EAF0ED;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.subscribe-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #EAF0ED;
+  height: 56px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.email {
+  padding: 16px 0px 16px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.email img {
+  padding-right: 20px;
+}
+
+#mail {
+  background-color: #EAF0ED;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.subscribe-btn {
+  width: 64px;
+  background: #ffe180;
+  border: none;
+  color: #3F5D45;
+  background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png) #FFE180 no-repeat center;
+  cursor: pointer;
+}
+
+.footer {
+  background: #EAF0ED;
+  padding-top: 30px;
+}
+
+.footerInfo {
+  height: 341px;
+  margin: 0 auto;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contact img {
+  margin-bottom: 115.5px;
+}
+
+.contact li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F5D45;
+}
+
+.solgan {
+  width: 59px;
+  height: 219px;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 72px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.link img {
+  width: 32px;
+  height: 32px;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3F5D45;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .logo img {
+    width: 114px;
+    height: 17px;
+  }
+  .header ul {
+    display: none;
+  }
+  .Info {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    margin-bottom: 0;
+  }
+  .hum {
+    display: block;
+  }
+  .header {
+    padding: 30px;
+  }
+  .container {
+    max-width: 576px;
+  }
+  .subscribe {
+    padding: 30px 10px;
+  }
+  .subscribeInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .solgan {
+    display: none;
+  }
+  .contactInfo {
+    margin-bottom: 37px;
+  }
+  .contactInfo img {
+    margin-bottom: 39.5px;
+  }
+  .content {
+    background-position: center;
+  }
+  .back {
+    display: none;
+  }
+  .backmob {
+    width: 100%;
+    height: 65px;
+    background-color: #FFE180;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .backmob h2 {
+    color: #3F5D45;
+    font-size: 24px;
+  }
+  .link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .link ul {
+    margin-bottom: 23px;
+  }
+}
+/*# sourceMappingURL=checkout.css.map */
