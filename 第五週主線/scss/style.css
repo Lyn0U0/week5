@@ -1,0 +1,462 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+  max-width: 940px;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  align-items: center;
+  padding: 30px 0px 30px 0px;
+  justify-content: space-between;
+}
+
+
+.logo img{
+  height: 40px;
+}
+
+.header ul{
+  width: 215px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-right: 79px;
+}
+
+.header ul a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #3F5D45;
+  font-weight: bold;  
+}
+
+.header ul :hover{
+  color: #EAF0ED;
+}
+
+.nar{
+  display: flex;
+}
+.hum{
+  display: none;
+}
+.banner {
+  padding-bottom: 60px;
+  
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu{
+  width: 33%;
+}
+
+.menu li{
+  text-align: center;
+  font-size: 24px;
+  line-height: 65px;
+  font-weight: bold;
+}
+
+.menu-1 a{
+  text-decoration: none;
+  display: block;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED; 
+}
+
+.menu-hd{
+  color: #EAF0ED;
+  background: #3F5D45;
+}
+
+.menu-1 :hover{
+  background: #EAF0ED;
+}
+
+.product{
+  width: 66%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.product li{
+  width: 49%;
+  margin-bottom: 20px;
+}
+
+.product-tag{
+  position: relative;
+}
+
+.product-tag p{
+  position: absolute;
+  left: 20px;
+  width: 16px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #EAF0ED;
+  background: #3F5D45;
+  padding: 10px;
+}
+.dessert{
+    width: 100%;
+}
+
+.heart-icon{
+    position: absolute;
+    cursor: pointer;
+    right: 25px;
+    top: 20px;
+}
+
+
+.product-info{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 20px;
+  color: #3F5D45;
+  padding: 13px 0px;
+  border: 1px  solid #EAF0ED;
+  border-top: 0px;
+}
+
+.product-info h3{
+  width: 50%;
+  border-right: 1px  solid #EAF0ED;
+}
+
+.product-info span{
+  width: 50%;
+  font-weight: bold;
+}
+
+.product input{
+  border:0;
+  width: 300px;
+  height: 65px;
+  background-color:#EAF0ED;
+  color: #3F5D45;
+  font-size: 24px;
+  font-weight: bold;
+}
+.product input{
+    width: 100%;
+    cursor: pointer;
+}
+.product input:hover {
+  background-color: #3f5d45;
+  color: #EAF0ED;
+}
+
+.page-switch{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+
+.page-bt{
+  border: 1px solid #EAF0ED;
+}  
+
+.page-bt a{
+  width: 60px;
+  height: 60px;
+  display: block;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.page-bt :hover{
+  background: #EAF0ED;
+}
+
+.page{
+  border: 1px solid #EAF0ED;
+}
+
+.page a{
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px;
+  color: #3F5D45;
+  display: block;
+}
+
+.page :hover{
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
+.subscribe{
+  background: #3F5D45;
+}
+.Info{
+    width: 780px;
+}
+.subscribeInfo{
+  
+  height: 116px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribe-header{
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-header img{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.subscribe-title{
+  font-size: 24px;
+  line-height: 33px;
+  color: #EAF0ED;
+  margin-right: auto;
+  cursor: pointer;
+}
+.subscribe-input{
+  display: flex;
+  background: #EAF0ED;
+  height: 56px;
+  justify-content: space-between;
+}
+
+.email{
+  padding: 16px 0px 16px 20px;
+
+  display: flex;
+}
+
+.email img{
+  padding-right: 20px;
+}
+
+#mail{
+  background-color: #EAF0ED;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+
+.subscribe-btn{
+  width: 64px;
+  background: #ffe180;
+  border: none;
+  color: #3F5D45;
+  background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png) #FFE180 no-repeat center; 
+  cursor: pointer;
+}
+
+
+.footer{
+  background: #EAF0ED;
+  padding-top: 30px;
+}
+.footerInfo{
+ 
+  height: 341px;
+  margin: 0 auto;
+}
+.contact{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contactInfo img{
+  margin-bottom: 115.5px;
+}
+  
+.contactInfo li{
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F5D45;
+}
+  
+.solgan{
+  width: 59px;
+  height: 219px;
+}
+.link{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+  
+.link ul{
+  display: flex;
+  width:  72px;
+  justify-content: space-between;
+}
+  
+.link img{
+  width: 32px;
+  height: 32px;
+}
+  
+.copyright{
+  font-size: 16px;
+  line-height: 19px;
+  color: #3F5D45;
+}
+
+
+
+@media (max-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+    .logo img{
+        width: 114px;
+        height: 17px;
+    }
+    .header ul{
+        display: none;
+    }
+    .banner {
+        margin: 0;
+    }
+    .menu{
+        width: 100%;
+    }
+    .product{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .product li{
+        width: 48%;
+    }
+    .page-switch{
+        justify-content: center;
+      }
+    .Info{
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 576px){
+    .hum{
+        display: block;
+    }
+    .header{
+      padding: 30px;
+    }
+    .container{
+        max-width: 576px;
+    }
+    .banner{
+      padding-bottom: 0;
+    }
+    .product{
+        padding: 0px 30px;
+    }
+    .product li{
+        width: 100%;
+    }
+
+    .subscribe{
+        padding: 30px 10px;
+    }
+
+    .subscribeInfo{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .solgan{
+        display: none;
+    }
+
+    .contactInfo{
+        margin-bottom: 37px;
+    }
+
+    .contactInfo img{
+        margin-bottom: 39.5px;
+    }
+
+    .link{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .link ul{
+        margin-bottom: 23px;
+    }
+}
