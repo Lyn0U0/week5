@@ -95,61 +95,36 @@ table {
   margin-bottom: 50px;
 }
 
-.line {
-  position: absolute;
-  top: 5px;
-  width: 180px;
-  border-top: solid #3F5D45 1px;
-  z-index: 2;
+.content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 190px;
 }
 
 .check_circle {
   position: relative;
-  margin-bottom: 32px;
-  width: 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  z-index: 1;
+  font-size: 20px;
 }
 
-.myicon-tick-checked {
-  display: inline-block;
-  position: relative;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #3F5D45;
+.check_circle + .check_circle {
+  margin-left: 63px;
 }
 
-.myicon-tick-checked:before, .myicon-tick-checked:after, .myicon-tick-uncheck:before, .myicon-tick-uncheck:after {
+.check_circle + .check_circle::before {
   content: '';
-  pointer-events: none;
   position: absolute;
-  color: white;
-  border: 1px solid;
-  background-color: white;
+  height: 1px;
+  width: 63px;
+  background-color: #3F5D45;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: -63px;
 }
 
-.myicon-tick-checked:before, .myicon-tick-uncheck:before {
-  width: 1px;
-  height: 1px;
-  left: 25%;
-  top: 50%;
-  -webkit-transform: skew(0deg, 50deg);
-          transform: skew(0deg, 50deg);
-}
-
-.myicon-tick-checked:after, .myicon-tick-uncheck:after {
-  width: 3px;
-  height: 1px;
-  left: 45%;
-  top: 42%;
-  -webkit-transform: skew(0deg, -50deg);
-          transform: skew(0deg, -50deg);
+.fa-check-circle {
+  color: #3F5D45;
 }
 
 .back {
@@ -170,6 +145,11 @@ table {
 .back h2 {
   color: #3F5D45;
   font-size: 24px;
+}
+
+.back a {
+  text-decoration: none;
+  display: block;
 }
 
 .backmob {
@@ -430,7 +410,7 @@ table {
     display: none;
   }
   .backmob {
-    width: 100%;
+    max-width: 576px;
     height: 65px;
     background-color: #FFE180;
     display: -webkit-box;
@@ -446,6 +426,10 @@ table {
   .backmob h2 {
     color: #3F5D45;
     font-size: 24px;
+  }
+  .backmob a {
+    display: block;
+    text-decoration: none;
   }
   .link {
     -webkit-box-orient: vertical;
